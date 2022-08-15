@@ -40,7 +40,7 @@ const render = () => {
       removeIcon.textContent = 'delete';
       element.appendChild(removeIcon);
       element.classList.add('eachtask');
-      element.setAttribute('id', `task-item-${tasks.index}`);
+      element.setAttribute('id', ${tasks.index});
       list.appendChild(element);
       element.querySelector('span').addEventListener('input', (e) => {
         tasks.toDo = e.target.textContent;
